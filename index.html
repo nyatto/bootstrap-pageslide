@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Template &middot; Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+	<link rel="stylesheet" href="css/jquery.pageslide.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="apple-touch-icon" href="img/apple-touch-icon-precomposed.png" />
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		window.onload = function(){
+			if(document.body.scrollTop == 0){
+				setTimeout(function(){scrollTo(0,1)}, 1);
+			}
+		};
+	</script>
+</head>
+<body>
+<div id="wrap">
+
+	<!-- Fixed navbar -->
+	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="#nav" class="btn btn-navbar open" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">Project name</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav" id="nav">
+						<li class="nav-header">Sidebar</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li class="nav-header">Sidebar</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li class="nav-header">Sidebar</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+ 					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="jumbotron">
+		<img src="dummy_img/bootstrap-mdo-sfmoma-01.jpg" alt="" class="w100 item">
+	</div>
+	<div id="main-content">
+		<div class="container">
+			<h1>Bootstrap template</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, doloribus, amet vitae qui sequi minima aperiam exercitationem quaerat necessitatibus consectetur modi nulla ea praesentium earum numquam dolore ipsum? Perspiciatis, aut.</p>
+		</div>
+	</div>
+	<div id="push"></div>
+</div>
+
+<div id="footer-fixed">
+	<div id="pagetop" class="container text-right"><a href="#" class="btn btn-small btn-link"><i class="icon-eject"></i> Back to top</a></div>
+	<footer id="footer">
+		<div class="container">
+			<aside id="regulation">
+				<ul>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+				</ul>
+			</aside>
+			<small>&copy; 2013 Company, Inc.</small>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="js/jquery.pageslide.min.js"></script>
+<script type="text/javascript">
+	jQuery(function($){
+		$(".open").pageslide();
+	});
+</script>
+
+</body>
+</html>

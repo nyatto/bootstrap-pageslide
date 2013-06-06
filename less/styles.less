@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/* -----------------------------------------------
+	reset styles
+----------------------------------------------- */
+img {
+	vertical-align: bottom;
+}
+ul, ol {
+	list-style: none;
+}
+table {
+	border-spacing: 0;
+	empty-cells: show;
+}
+// -----------------------------------------------
+
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// LESS definition
+// -----------------------------------------------
+
+
+
+/* -----------------------------------------------
+	adjust Bootstrap styles
+----------------------------------------------- */
+body {
+	padding-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar-fixed-top .navbar-inner {
+	padding: 10px 5px 9px;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom,
+.navbar-static-top {
+	margin-right: 0;
+	margin-left: 0;
+}
+// .navbar .brand {
+// 	padding-top: 0;
+// 	padding-bottom: 0;
+// }
+.navbar .brand.pull-center {
+	float: none;
+	text-align: center;
+	margin-left: 65px;
+	margin-right: 65px;
+	padding: 0;
+}
+
+
+/* -----------------------------------------------
+	basic structure
+----------------------------------------------- */
+html, 
+body {
+	height: 100%;
+}
+#wrap {
+	min-width: 320px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -118px;
+}
+#push,
+#footer-fixed {
+	min-width: 320px;
+	height: 118px;
+}
+#main-content {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+@media only screen and (min-width:980px){
+	#wrap > #main-content {
+		padding-top: 80px;
+	}
+	#wrap > .jumbotron {
+		margin-bottom: -60px;
+		padding-top: 60px;
+	}
+}
+@media only screen and (min-width:768px){
+	.container {
+		max-width: 960px;
+	}
+}
+
+.jumbotron {
+	overflow: hidden;
+}
+@media only screen and (min-width:768px){
+	.jumbotron {
+		height: 300px;
+	}
+}
+@media only screen and (max-width:767px){
+	.jumbotron {
+		height: 200px;
+	}
+}
+@media (max-width:979px) {
+	/* Remove padding above jumbotron */
+	body {
+		padding-top: 0;
+	}
+	.jumbotron {
+		margin-top: -20px; /* Offset bottom margin on .navbar */
+	}
+}
+
+/* header
+----------------------------------------------- */
+@media only screen and (max-width:979px){
+	#wrap .btn-navbar {
+		float: left;
+	}
+	#nav li a {
+		border-bottom: 1px solid #484848;
+		color: #FFFFFF;
+		font-size: 16px;
+		line-height: 2;
+		padding: 4px 10px;
+	}
+	#nav li a:hover {
+		background-color: @black;
+	}
+}
+
+.nav li.nav-header {
+	margin-top: 9px;
+	text-shadow: none;
+}
+
+
+/* footer
+----------------------------------------------- */
+#footer {
+	background-color: #f5f5f5;
+	border-top: 1px solid @grayLighter;
+	padding: 20px 20px 10px;
+}
+#regulation {
+	
+}
+#regulation ul {
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+#regulation li {
+	display: inline-block;
+	margin: 5px 15px 5px 0;
+	white-space: nowrap;
+}
+
+
+
+/* -----------------------------------------------
+	common styles
+----------------------------------------------- */
+img.w100 {
+	width: 100%;
+	height: auto;
+}
+
+
+/* top page
+----------------------------------------------- */
